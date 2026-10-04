@@ -1,5 +1,5 @@
 ---
-title: Decision Lab: Making tradeoffs visible with Sanity
+title: "Decision Lab: Making tradeoffs visible with Sanity"
 published: false
 tags: devchallenge, sanitychallenge, sanity, ai
 ---
