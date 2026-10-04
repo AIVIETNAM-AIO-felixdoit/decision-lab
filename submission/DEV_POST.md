@@ -16,7 +16,19 @@ The demo compares two project ideas: **AI Study Planner** and **Portfolio Websit
 
 **Live app:** [Decision Lab](https://decision-lab-sanity.netlify.app/)
 
-**Walkthrough:** [ADD VIDEO OR SCREENSHOTS: overview, side-by-side comparison, changed priorities]
+The published **What should I build next?** decision is the Sanity-backed example in the sidebar. The screenshots below follow the built-in **Where should I work next?** example, which uses three options to show more of the comparison interface.
+
+![Decision Lab overview showing Join a larger team as the front runner in a career decision](https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/mpoisjtq4xnpkv7hbe0t.png)
+*Overview: the current front runner and the three available paths.*
+
+![Three career option cards with fit scores of 79, 78, and 71 percent above the priority sliders](https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/wnp8ehxqkmwbfwsoz59f.png)
+*At a glance: option scores and the sliders used to test different priorities.*
+
+![Decision Lab side-by-side comparison showing criterion scores and reasoning for three career options](https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/0chf3svkd9gmymw9jd17.png)
+*Side by side: each option is scored against the same criteria.*
+
+![Lower rows of the career comparison and interactive priority sliders](https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/nsp5zv4z587lwv7e0btp.png)
+*The rest of the breakdown, with weights that can be adjusted without editing published content.*
 
 No login is needed to view the published decision. The app's **New decision** flow creates a local browser draft; published content is edited in Sanity Studio.
 
@@ -33,7 +45,7 @@ I built this with Codex as an iterative coding partner. We started with a narrow
 The first pass used a local example so the interface and scoring could be tested before the Sanity project existed. Then I created a Sanity project, connected the Studio schema, added the frontend origin to CORS, and entered a real decision. The content model has a `decision` document containing `criteria` and `options`; each option has a score and optional reasoning for each criterion. The app calculates:
 
 ```text
-fit = sum(score × criterion weight) / (5 × sum(criterion weight)) × 100
+fit = sum(score * criterion weight) / (5 * sum(criterion weight)) * 100
 ```
 
 The first real publish revealed a useful failure: the document had options but no scores yet. The API returned `null` for the score arrays. I updated the query layer to normalize missing arrays, changed the interface to ask for scores instead of inventing a winner, and added Studio validation requiring scores. That was more valuable than a happy-path screenshot: it made the app honest about incomplete content.
@@ -53,7 +65,3 @@ Sanity holds the decision question, context, category, criteria, option summarie
 ## What I Would Improve Next
 
 The current frontend reads published Sanity content while its quick-create flow saves drafts locally. A future version could use Sanity's App SDK for authenticated editing and keep drafts in Content Lake. I would also add a richer way to link scores to criteria, so content editors do not have to type the exact criterion name.
-
-## Agent Session
-
-[OPTIONAL: ADD A CURATED PUBLIC AGENT SESSION LINK. Review it for private information before publishing.]
