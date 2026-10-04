@@ -1,17 +1,21 @@
-# Decision Lab
+<h1 align="center">Decision Lab</h1>
 
-A small decision workspace for comparing options against weighted criteria. Built for the Sanity Challenge, Path Two.
+<p align="center">A small decision workspace for comparing options against weighted criteria.<br>Built for the Sanity Challenge, Path Two.</p>
 
-![React](https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
-![Sanity](https://img.shields.io/badge/Sanity-5-F03E2F?logo=sanity&logoColor=white)
-![Netlify](https://img.shields.io/badge/Deployed_on-Netlify-00C7B7?logo=netlify&logoColor=white)
+<p align="center">
+  <img alt="React 19" src="https://img.shields.io/badge/React-19-149ECA?logo=react&amp;logoColor=white">
+  <img alt="TypeScript 5" src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&amp;logoColor=white">
+  <img alt="Vite 6" src="https://img.shields.io/badge/Vite-6-646CFF?logo=vite&amp;logoColor=white">
+  <img alt="Sanity 5" src="https://img.shields.io/badge/Sanity-5-F03E2F?logo=sanity&amp;logoColor=white">
+  <img alt="Deployed on Netlify" src="https://img.shields.io/badge/Deployed_on-Netlify-00C7B7?logo=netlify&amp;logoColor=white">
+</p>
 
-## Challenge submission
+<h2 align="center">Challenge submission</h2>
 
-- [Read the DEV submission](https://dev.to/felixdoit/decision-lab-making-tradeoffs-visible-with-sanity-2fbm)
-- [Try the live demo](https://decision-lab-sanity.netlify.app/)
+<p align="center">
+  <a href="https://dev.to/felixdoit/decision-lab-making-tradeoffs-visible-with-sanity-2fbm">Read the DEV submission</a> |
+  <a href="https://decision-lab-sanity.netlify.app/">Try the live demo</a>
+</p>
 
 ## Run locally
 
