@@ -2,6 +2,17 @@
 
 A small decision workspace for comparing options against weighted criteria. Built for the Sanity Challenge, Path Two.
 
+![React](https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
+![Sanity](https://img.shields.io/badge/Sanity-5-F03E2F?logo=sanity&logoColor=white)
+![Netlify](https://img.shields.io/badge/Deployed_on-Netlify-00C7B7?logo=netlify&logoColor=white)
+
+## Challenge submission
+
+- [Read the DEV submission](https://dev.to/felixdoit/decision-lab-making-tradeoffs-visible-with-sanity-2fbm)
+- [Try the live demo](https://decision-lab-sanity.netlify.app/)
+
 ## Run locally
 
 Requires Node.js 22.12 or newer.
@@ -49,7 +60,3 @@ In Studio, add a score to each option for every criterion. Use the exact criteri
 npm run build
 npm run studio:build
 ```
-
-## Submission notes
-
-The DEV challenge requires a demo, source code, build process writeup, and Sanity project ID or public dataset URL. Record the prompts, mistakes, and changes made during development. The app currently has no authentication and reads public published content. Local drafts do not sync to Sanity; create publishable content in Studio.
