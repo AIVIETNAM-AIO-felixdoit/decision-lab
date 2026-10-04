@@ -1,0 +1,9 @@
+node_modules
+dist
+studio-dist
+.sanity
+.env
+.env.local
+*.log
+*.tsbuildinfo
+*.zip
